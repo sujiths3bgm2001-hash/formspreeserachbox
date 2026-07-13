@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Search Box</title>
+
+<style>
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#f5f5f5;
+    font-family:Arial, sans-serif;
+}
+
+.search-box{
+    display:flex;
+    width:500px;
+    max-width:90%;
+    background:#fff;
+    border-radius:50px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+.search-box input{
+    flex:1;
+    border:none;
+    outline:none;
+    padding:15px 20px;
+    font-size:16px;
+}
+
+.search-box button{
+    border:none;
+    background:#4CAF50;
+    color:white;
+    padding:0 25px;
+    cursor:pointer;
+    font-size:18px;
+    transition:0.3s;
+}
+
+.search-box button:hover{
+    background:#388E3C;
+}
+</style>
+</head>
+<body>
+
+<form class="search-box" action="https://formspree.io/f/xnjeqpvl" method="POST">
+    <input type="text" name="message" placeholder="Search here...">
+    <button type="submit">🔍</button>
+</form>
+
+</body>
+</html>
